@@ -1,0 +1,22 @@
+.naslov{
+  text-align: center;
+  color: yellowgreen;
+}
+.slika{
+  width: 300px;
+  border: double 2px red;
+}
+.isti{
+  color: gray;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+}
+.razlicit{
+  color: lightseagreen;
+}
+.link{
+  color: red;
+}
+.link:hover{
+  color: green;
+}

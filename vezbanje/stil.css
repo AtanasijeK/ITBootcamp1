@@ -1,0 +1,41 @@
+body{
+  background-color: rgb(160, 160, 75);
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  color: darkred;
+}
+h3{
+  color: red;
+}
+p{
+  color: purple;
+  font-size: 20px;
+}
+img{
+  width: 400px;
+  height: 300px;
+  border: dotted 2px;
+}
+a{
+  color: orange;
+}
+.naslov_dva{
+  text-align: center;
+}
+.paragraf_dva{
+  text-align: right;
+  font-size: 24px;
+}
+
+.naslov_tri{
+  text-align: center;
+  color: green;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.promo_video:hover{
+  background-color: yellow;
+}
+.promo_video:visited{
+  color: green;
+}

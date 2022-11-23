@@ -1,0 +1,40 @@
+.header{
+  background-color: gainsboro;
+}
+.slika{
+  margin: 10px;
+}
+.prvi_deo, .drugi_deo{
+  width: 50%;
+}
+.linija{
+  width: 450px;
+}
+.obrazovanje{
+  text-align: center;
+}
+.prvi_div{
+  display: flex;
+  margin: 0 150px;
+}
+.poruka{
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+}
+.treci_div{
+  margin: 0 500px;
+  
+}
+.dugme{
+  margin: 0 30px;
+  padding: 8px 16px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.dugme:hover{
+  background-color: greenyellow;
+  color: gainsboro;
+}
