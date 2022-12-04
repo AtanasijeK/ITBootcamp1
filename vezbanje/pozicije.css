@@ -1,0 +1,17 @@
+.s {
+  position: static;
+  left: 20%;
+}
+.r {
+  position: relative;
+  left: 20%;
+  top: 30px;
+}
+.a{
+  position: absolute;
+  right: 20px;
+}
+.f{
+  position: fixed;
+  top: 0;
+}

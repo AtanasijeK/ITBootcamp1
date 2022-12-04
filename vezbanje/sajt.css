@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
+header{
+  background-color: gray;
+  text-align: center;
+  font-size: 36px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+}
+nav{
+  background-color: gray;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+}
+article{
+  background-color: gray;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+  width: 60%;
+  height: 300px;
+}
+section{
+  background-color: rgb(60, 59, 59);
+  font-size: 20px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+  height: 80%;
+}
+aside{
+  background-color: gray;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+  width: 38%;
+  height: 300px;
+}
+div{
+  display: flex;
+}
+
+footer{
+  background-color: gray;
+  text-align: center;
+  font-size: 36px;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  width: 98%;
+}

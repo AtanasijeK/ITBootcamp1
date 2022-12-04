@@ -1,0 +1,19 @@
+.poster{
+  width: 200px;
+  border: 1px solid black;
+}
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+.alien{
+  color: red;
+}
+h4{
+  color: blue;
+}
+.text{
+  height: 150px;
+}

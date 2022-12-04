@@ -1,0 +1,26 @@
+img {
+  width: 50%;
+}
+@media only screen and (max-width: 700px){
+  img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  p {
+    color: purple;
+  }
+}
+
+/* 
+Jos jedna mogucnost kako se moze odraditi predhodno odradjena funkcija
+(dobar nacin prikaza kada imamo npr vise ogranicenja za max-width u ovom slucaju
+
+@media only screen and (min-width: 500px) {
+  @media only screen and (max-width: 700px) {
+
+  }
+  }
+}
+*/
+

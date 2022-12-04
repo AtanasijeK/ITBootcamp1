@@ -1,0 +1,14 @@
+table, tr, td, th{
+  border: solid 1px;
+}
+.casovi{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  letter-spacing: 4px;
+}
+table{
+  width: 600px;
+  height: 200px;
+  border-collapse: collapse;
+}

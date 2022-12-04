@@ -1,0 +1,21 @@
+table, th, td {
+  border: 1px solid;
+}
+table{
+  border-collapse: collapse;
+}
+th, td {
+  padding-right:25px;
+}
+.treci{
+  background-color: yellow;
+}
+.email{
+  background-color: yellow;
+}
+.prva:nth-child(odd){
+  font-style: italic;
+}
+.druga:nth-child(even):hover{
+  background-color: yellowgreen;
+}

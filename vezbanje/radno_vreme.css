@@ -1,0 +1,33 @@
+table, tr, td {
+
+}
+table{
+  border-collapse: collapse;
+}
+.employee{
+  width: 500px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  border: solid 1px orange;
+}
+.head{
+  text-align: center;
+  font-weight: bold;
+}
+tr:nth-child(even){
+  background-color: rgb(250, 198, 102);
+}
+.num{
+  text-align: right;
+}
+.last{
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+}
+td{
+  border-right-color: gray;
+}

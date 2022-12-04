@@ -1,0 +1,33 @@
+
+header{
+  background-image: url('https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg');
+  position: relative;
+  width: 800px;
+  height: 500px;
+}
+div{
+  
+  color: white;
+  font-size: 24px;
+  background-color: red;
+  width: 370px;
+}
+/*
+.div{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+*/
+/*
+div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+*/
+
+/*centralno pozicioniranje*/
+div{
+  position: absolute;
+}

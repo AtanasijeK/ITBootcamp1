@@ -1,0 +1,21 @@
+.forma{
+  width: 550px;
+  height: 300px;
+  border: 1px solid black;
+  position: relative;
+  background-color: aqua;
+}
+.isti{
+  text-align: center;
+}
+.dva{
+  border: 1px solid gainsboro;
+  background-color: white;
+  margin: 10px;
+  padding-left:20px ;
+}
+.okvir{
+  border: 1px solid black;
+  width: 100%;
+  background-color: red;
+}

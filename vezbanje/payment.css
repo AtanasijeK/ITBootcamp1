@@ -1,0 +1,23 @@
+div{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+input{
+  width: 150px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#save{
+  margin: 0;
+  width: 20px;
+}
+.d_save{
+  display: flex;
+}
+.dugme{
+  background-color: rgb(109, 180, 3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
