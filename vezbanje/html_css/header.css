@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  /*background-color: orangered;*/
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+  float: left;
+  width: 20%;
+  border: 1px solid red;
+  text-align: center;
+  background-color: orangered;
+}
+
+ul li a:hover {
+  background-color: red;
+  color: rgb(247, 140, 140);
+}
+a{
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 20px 0;
+}
+
+.podmenu{
+  display: none;
+  background-color: orange;
+  border: 1px solid red;
+}
+
+header ul li:nth-child(4):hover .podmenu{
+  display: block;
+}
+
+table{
+  margin-top: 100px;
+}
+#name, #email {
+  width: 100%;
+}

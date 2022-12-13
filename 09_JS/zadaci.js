@@ -27,3 +27,68 @@ let h = datum.getHours();
 let m = datum.getMinutes();
 console.log(h + ":" + m);
 console.log(h * 60 + m);
+
+//Zadatak3 
+let ukupnaCenaRobe = 1399;
+let novcanica2 = 2000; 
+let kusur2 = novcanica2 - ukupnaCenaRobe;
+
+console.log(kusur2);
+
+//Zadatak5
+/* let dan = datum.getDate();
+let mesec = mesec.getMonth() + 1;
+let godina = godina.getFullYear();
+console.log(dan + "." + mesec + "." + godina);
+console.log(godina + "/" + mesec + "/" + dan) */
+
+
+
+//Zadatak6
+// prva konverzija
+let euri = 22; 
+let srednjiKurs = 117.2986;
+let dinari = euri * srednjiKurs;
+
+console.log(dinari);
+// druga konverija 
+dinari = 13000
+euri = dinari / srednjiKurs 
+console.log(euri);
+
+
+//Zadatak7
+
+// prvi deo zadatka 
+let brEura = 20;
+let eD = 117.2986;
+let dD = 111.57;
+
+let dolari = brEura*eD/dD;
+console.log(dolari);
+
+// drugi deo zadatka 
+let brDolara = 2;
+
+brEura = brDolara*dD/eD;
+console.log(brEura);
+
+//Zadatak8
+
+// C --> F
+let c = 7;
+let f = c * 1.8 + 32;
+
+console.log(f);
+
+// F --> C 
+c = (f - 32) / 1.8;
+console.log(c);
+
+// C --> K 
+let k = c + 273.15;
+console.log(k);
+
+// K --> C 
+c = k - 273.15;
+console.log(c);

@@ -1,0 +1,2 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[33],{pCWb:function(n,e,a){"use strict";a.d(e,"a",(function(){return g}));var g=function registerLanguage(n,e,a,g){n.languages.register({id:e}),n.languages.setLanguageConfiguration(e,a),n.languages.setMonarchTokensProvider(e,g)}}}]);
+//# sourceMappingURL=33.079e01c80df5468e9b1e.chunk.js.map

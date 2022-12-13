@@ -1,0 +1,2 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[294],{t3Qs:function(t,n,_){"use strict";_.d(n,"a",(function(){return i}));var e=_("DUL6"),u=_("q1tI"),i=function useLENextDatadogTracing(){Object(u.useEffect)((function(){e.a.addRumGlobalContext("le_next_view",!0)}),[])}}}]);
+//# sourceMappingURL=294.94242468956b6c3dcf18.chunk.js.map
