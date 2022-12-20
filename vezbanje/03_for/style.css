@@ -1,0 +1,13 @@
+div{
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+  margin-left: -4px;
+  vertical-align: middle
+}
+span{
+  position: relative;
+  bottom: -6px;
+}

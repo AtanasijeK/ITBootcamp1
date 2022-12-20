@@ -135,3 +135,52 @@ for (i = 1; i <=k; i++){
   }
 }
 console.log(`Broj ${k} je deljiv sa ${brBrojeva} brojeva!`);
+
+// XX zadatak - Napraviti tabelu sa 6 redova. Svaki red tabele treba da ima po dve ćelije (dve kolone). Svakom parnom redu dodati klasu „obojen“. Korišćenjem CSS-a, klasi obojen postaviti proizvoljnu boju pozadine.
+
+let str = `<table border="1"> `;
+for (i = 1; i <= 6; i++){
+  if (i % 2 == 0){
+    str += 
+      `<tr class="roze">
+        <td>Tekst</td> 
+        <td>Tekst</td>
+      </tr>
+      `;
+  }
+  else{
+    str += 
+      `<tr>
+        <td>Tekst</td> 
+        <td>Tekst</td>
+      </tr>
+      `;
+  }
+
+  
+}
+str += `</table>`
+// document.body.innerHTML += str;
+document.write(str);
+
+// XXI zadatak - Koristeći for petlju kreirati neuređenu listu sa ugnježdenim elementima, kao što je prikazano na slici sa desne strane.
+
+let lista = `<ul>`;
+for(i = 1; i <= 10; i++) {
+  if (i % 3 == 0) {
+    lista +=
+    `
+      <li>
+        <ul>
+          <li>Element ${i}</li>
+        </ul>
+      </li>
+    `
+  }
+  else{
+    lista += `<li>Element ${i}</li>`;
+  }
+  
+}
+lista += `</ul>`;
+document.write(lista);
