@@ -235,15 +235,16 @@ document.write(lista(spisak));
 
 
 // XIX zadatak - Ispisati dužinu svakog elementa u nizu stringova. 
+
 let duzinaStringa = niz => {
   let duzina = 0;
   for (let i = 0; i < niz.length; i++) {
-    duzina += niz[i].length;
+    duzina = niz[i].length - 1;
+    console.log(duzina);
   }
-  return duzina; 
 }
 
-console.log(duzinaStringa(spisak));
+duzinaStringa(spisak);
 
 
 // XX zadatak - Odrediti element u nizu stringova sa najvećom dužinom.

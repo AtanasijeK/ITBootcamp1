@@ -70,7 +70,7 @@ let duzineSvihStr = niz => {
 duzineSvihStr(str)
 
 
-// XIX zadatak - Odrediti element u nizu stringova sa najvećom dužinom.
+// XX zadatak - Odrediti element u nizu stringova sa najvećom dužinom.
 let maxDuzinaPoslednji = niz => {
   let maxd = 0;
   niz.forEach(el => {

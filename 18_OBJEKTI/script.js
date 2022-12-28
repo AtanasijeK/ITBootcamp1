@@ -76,10 +76,56 @@ let dan = {
     return br;
   },
 
-  // III zadatak 
-  
-}
+  // V zadatak
+  toplo: function () {
+  //   if(this.brNatprosecnih() > this.Temperatura.length/2) {
+  //     return true;
+  //   }
+  //   else {
+  //     return false;
+  //   }
+  // } 
+    return this.brNatprosecnih() > this.Temperatura.length/2;
+  },
+
+  // VI 
+  leden: function() {
+    // for (let i = 0; i < this.Temperatura.length; i++) {
+    //   if (this.Temperatura[i] > 0) {
+    //     return false;
+    //   }
+    // }
+    // return true;
+
+    // 2. nacin
+    // let leden_dan = true;
+    // this.Temperatura.forEach(temp => {
+    //   if(temp > 0) {
+    //     leden_dan = false;
+    //   }
+    // });
+    // return leden_dan;
+    
+    // 3. nacin
+    let br_iznad_nule = 0;
+    this.Temperatura.forEach(temp => {
+        if(temp > 0) {
+          br_iznad_nule++;
+        }
+      });
+      if(br_iznad_nule == 0) {
+        return true;
+      }
+      else {
+        return false;
+      }
+  }, 
+
+};
 
 console.log(dan.prosecna());
 console.log(dan.brNatprosecnih());
-console.log(dan.brMaksTemp());
+// console.log(dan.brMaksTemp());
+console.log(dan.toplo());
+console.log(dan.leden());
+
