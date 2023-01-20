@@ -83,7 +83,7 @@ let ucenici = [polaznik1, polaznik2, polaznik3, polaznik4, polaznik5, polaznik6,
 let kurs1 = {
   naziv: "Razvoj veb stranica: JS",
   grad: "Beograd",
-  polaznici: [polaznik1, polaznik2, polaznik3],
+  polaznici: [polaznik1, polaznik2, polaznik3, polaznik10],
 };
 
 let kurs2 = {
@@ -136,28 +136,17 @@ console.log(zad2(kursevi, "Osnove programiranja: Java"));
 
 
 // Funkciji se prosleđuje niz kurseva, a ona ispisuje naziv kursa i grad u kojem se nalazi maksimalan broj polaznika. Ukoliko postoji više takvih kurseva, ispisati bilo koji takav kurs.
-let brPolaznika = polaznici => {
-  let br = 0;
-  polaznici.forEach(p => {
-    br++
+let zad3 = kursevi => {
+  let maks = kursevi[0];
+  kursevi.forEach(k => { 
+    if(maks.polaznici.length < k.polaznici.length) {
+      maks == k;
+    }
   });
-  return br;
+  return maks.grad;
 }
-console.log(brPolaznika(kursevi));
 
-// let zad3 = kursevi => {
-//   kursevi.forEach(k => {
-//     let br = 0; 
-//     let maks = polaznici[0]
-//     k.polaznici.forEach(p => {
-//       br++;
-//       if()
-//     })
-//   })
-//   return br;
-// }
-
-// console.log();
+console.log(zad3(kursevi));
 
 
 // Funkciji se prosleđuje niz kurseva i string koji predstavlja prezime, a ispisuje sve polaznike (ime i prezime polaznika, kao i naziv kursa i grad gde pohađaju kurs) čije ime sadrži dati parametar.
