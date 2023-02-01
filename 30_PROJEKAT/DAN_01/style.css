@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 2000px;
+}
+
+.row{
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 500px){
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  /* Header */
+  .col-3 {
+    display: none;
+  }
+  h1, h3 {
+    padding: 10px 0;
+  }
+
+  .h3-div {
+    margin-top: 68px;
+  }
+
+
+  .chanel {
+    display: block;
+    margin: 8px auto;
+    width: 90%;
+  }
+
+  ul {
+    padding: 8px 0;
+  }
+}
+
+/* TABLET */
+
+@media only screen and (min-width:501px) and (max-width:999px) {
+  [class*="col-t-"] {
+    float: left;
+  }
+
+  .col-t-1{
+    width: 8.33%;
+  }
+  .col-t-2{
+    width: 16.66%;
+  }
+  .col-t-3{
+    width: 25%;
+  }
+  .col-t-4{
+    width: 33.33%;
+  }
+  .col-t-5{
+    width: 41.66%;
+  }
+  .col-t-6{
+    width: 50%;
+  }
+  .col-t-7{
+    width: 58.33%;
+  }
+  .col-t-8{
+    width: 66.66%;
+  }
+  .col-t-9{
+    width: 75%;
+  }
+  .col-t-10{
+    width: 83.33%;
+  }
+  .col-t-11{
+    width: 91.66%;
+  }
+  .col-t-12{
+    width: 100%;
+  }
+
+  .col-3{
+    display: none;
+  }
+
+  /* Header */
+
+  h1, h3 {
+    padding: 15px 0;
+  }
+  .h3-div{
+    margin-top: 70px;
+  }
+
+  /* Body */
+
+  .chanel {
+    display: inline-block;
+    width: 23%;
+  }
+
+  ul {
+    padding: 20px 0;
+  }
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1000px){
+  [class*="col-"] {
+    float: left;
+  }
+
+  .col-1{
+    width: 8.33%;
+  }
+  .col-2{
+    width: 16.66%;
+  }
+  .col-3{
+    width: 25%;
+  }
+  .col-4{
+    width: 33.33%;
+  }
+  .col-5{
+    width: 41.66%;
+  }
+  .col-6{
+    width: 50%;
+  }
+  .col-7{
+    width: 58.33%;
+  }
+  .col-8{
+    width: 66.66%;
+  }
+  .col-9{
+    width: 75%;
+  }
+  .col-10{
+    width: 83.33%;
+  }
+  .col-11{
+    width: 91.66%;
+  }
+  .col-12{
+    width: 100%;
+  }
+
+  /* Header */
+
+  h1, h3 {
+    padding: 20px 0;
+  }
+  .h3-div{
+    margin-top: 80px;
+  }
+
+  /* Body */
+
+  .chanel {
+    display: inline-block;
+    width: 23%;
+  }
+
+  ul {
+    padding: 20px 0;
+  }
+}
+
+
+
+/* HEADER */
+
+.col-6, .col-12 {
+  background-color: rgb(29,34,38);
+  border-radius: 5px;
+  margin-bottom: 2px;
+
+}
+
+.col-12 {
+  position: fixed;
+}
+
+h1, h3 {
+  color: rgb(112,181,248);
+  /* padding: 20px 0; */
+  letter-spacing: 4px;
+  /* text-align: center; */
+}
+
+
+/* BODY */
+
+.chanel, .send, .update {
+  background-color:  rgb(29,34,38);
+  color: rgb(112,181,248);
+  cursor: pointer;
+}
+
+/* ul {
+  padding: 20px 0;
+} */
+
+.chanel {
+  /* width: 23%; */
+  padding: 8px 0;
+  text-decoration: none;
+  /* display: inline-block; */
+  list-style-type: none;
+  border: 2px solid rgb(112,181,248);
+  border-radius: 15px;
+  transition: 0.4s;
+
+}
+
+.chanel:hover {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.li-mess {
+  border: 1px solid black;
+  /* float: left; */
+  /* display: block; */
+  width: 350px;
+  margin: 5px;
+  margin-left: 10px;
+  list-style-type: none;
+  padding: 10px;
+  background-color: rgb(112,181,248);
+  border-radius: 10px;
+  border-top-left-radius: 0;
+}
+
+.span-username {
+  font-weight: bold;
+}
+
+.div-date {
+  color: gray;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* section{
+  float: left;
+} */
+
+
+/* FOOTER */
+
+.row-footer{
+  position: fixed;
+  bottom: 2px;
+  /* text-align: center; */
+}
+
+.send, .update {
+  width: 20%;
+  padding: 5px 0;
+  border: 2px solid rgb(112,181,248);
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.send-div, .update-div {
+  padding: 5px 0;
+}
+
+.send:hover, .update:hover {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+#message, #username {
+  width: 40%;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  margin-right: 20px;
+  background-color: rgb(56,67,79);
+}
+
+#message[type="text"], #username[type="text"] {
+  color: rgb(205,208,211);
+  padding-left: 20px;
+}
+
+/* #message[value] {
+  color: white;
+} */
+
+::placeholder {
+  /* padding: 0 15px; */
+  color: rgb(205,208,211);
+}

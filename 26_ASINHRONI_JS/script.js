@@ -159,3 +159,6 @@ getUser((niz) => {
 }, (poruka) => {
   console.log(poruka);
 });
+
+
+////////// ////////// Zadaci sa slajda br 18 ////////// //////////
