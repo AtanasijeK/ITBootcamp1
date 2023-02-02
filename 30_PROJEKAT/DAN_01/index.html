@@ -32,11 +32,11 @@
     <div class="col-3">&nbsp</div>
 
     <nav class="col-6 col-t-12">
-      <ul>
-        <li class="chanel">#general</li>
-        <li class="chanel">#js</li>
-        <li class="chanel">#homework</li>
-        <li class="chanel">#test</li>
+      <ul id="ul-channel">
+        <li class="channel" id="general">#general</li>
+        <li class="channel" id="js">#js</li>
+        <li class="channel" id="homework">#homework</li>
+        <li class="channel" id="test">#test</li>
       </ul>
     </nav>
 
@@ -48,10 +48,20 @@
 
     <section class="col-6 col-t-12">
       <ul id = "ul-message">
-        
+
       </ul>
     </section>
 
+    <div class="col-3">&nbsp</div>
+  </div>
+
+  <div class="row">
+    <div class="col-3">&nbsp</div>
+    <section class="col-6">
+      <span id="notification">
+
+      </span>
+    </section>
     <div class="col-3">&nbsp</div>
   </div>
 
@@ -65,7 +75,7 @@
       </div>
       <div class="update-div">
         <input type="text" name="username" id="username" placeholder="Update username">
-        <input type="button" value="UPDATE" class="update">
+        <input type="button" value="UPDATE" class="update" id="update-btn">
       </div>
     </footer>
 

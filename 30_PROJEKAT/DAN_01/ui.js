@@ -12,33 +12,40 @@ export class ChatUI {
   }
 
   formatDate (date) {
-    let d = date.getDate();
-    let m = date.getMonth() + 1;
-    let y = date.getFullYear();
-    let h = date.getHours();
-    let min = date.getMinutes();
+    let d = String(date.getDate()).padStart(2, "0");
+    let m = String(date.getMonth() + 1).padStart(2, "0");
+    let y = String(date.getFullYear());
+    let h = String(date.getHours()).padStart(2, "0");
+    let min = String(date.getMinutes()).padStart(2, "0");
+    let today = new Date (); 
 
-    d = String(d).padStart(2, '0');
-    m = String(m).padStart(2, '0');
-    h = String(h).padStart(2, '0');
-    min = String(min).padStart(2, '0');
+    let fullDate = `${d}.${m}.${y}-${h}:${min}`;
+    let fullTime = `${h}:${min}`;
 
-    let fullDate = d + "." + m + "." + y + "." + "-" + h + ":" + min;
-    
-    return fullDate;
+    if(date.toDateString() == today.toDateString()) {
+      return fullTime;
+    }
+    else {
+      return fullDate;
+    }
   }
 
   templateLI (data) {
     let date = data.created_at.toDate();
     let fullDate = this.formatDate(date);
     
-    let liMessage = 
+      let liMessage = 
     `<li class="li-mess">
-        <span class="span-username">${data.username} : </span>
-        <span class="span-message">${data.message} </span>
-        <div class="div-date">${fullDate} </div>
+        <span class="span-username">${data.username} :</span>
+        <span class="span-message">${data.message}</span>
+        <div class="div-date">${fullDate}</div>
     </li>`
-
     this.list.innerHTML += liMessage;
+
   }
+
+  clearUL() {
+    this.list.innerHTML = "";
+  }
+
 }

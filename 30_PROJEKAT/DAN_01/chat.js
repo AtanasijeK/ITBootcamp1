@@ -3,6 +3,7 @@ class Chatroom {
     this.room = room;
     this.username = username; 
     this.chats = db.collection('chats');
+    this.unsub; 
   }
 
   // Seteri 
@@ -16,11 +17,22 @@ class Chatroom {
   }
 
   set username (u) {
-    if (u.length > 0) {
+    u = u.trim();
+    if (u.length > 1 && u.length < 11 && u !== "") {
       this._username = u;
     }
     else {
       this._username = "Error";
+      window.alert("Incorrect username!")
+    }
+
+  }
+
+  // Update room
+  updateRoom(ur) {
+    this.room = ur;
+    if(this.unsub) {
+      this.unsub();
     }
   }
 
@@ -49,7 +61,10 @@ class Chatroom {
   }
 
   getChats (callback) {
-    this.chats.onSnapshot( snapshot => {
+    this.unsub = this.chats
+    .orderBy('created_at')
+    .where('room', '==', this.room)
+    .onSnapshot( snapshot => {
       snapshot.docChanges().forEach( change => {
         if(change.type == "added") {
           // console.log(change.doc.data());

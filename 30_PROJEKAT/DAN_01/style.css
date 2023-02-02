@@ -37,7 +37,7 @@ body {
   }
 
 
-  .chanel {
+  .channel {
     display: block;
     margin: 8px auto;
     width: 90%;
@@ -107,7 +107,7 @@ body {
 
   /* Body */
 
-  .chanel {
+  .channel {
     display: inline-block;
     width: 23%;
   }
@@ -172,7 +172,7 @@ body {
 
   /* Body */
 
-  .chanel {
+  .channel {
     display: inline-block;
     width: 23%;
   }
@@ -207,7 +207,7 @@ h1, h3 {
 
 /* BODY */
 
-.chanel, .send, .update {
+.channel, .send, .update {
   background-color:  rgb(29,34,38);
   color: rgb(112,181,248);
   cursor: pointer;
@@ -217,7 +217,7 @@ h1, h3 {
   padding: 20px 0;
 } */
 
-.chanel {
+.channel {
   /* width: 23%; */
   padding: 8px 0;
   text-decoration: none;
@@ -229,7 +229,11 @@ h1, h3 {
 
 }
 
-.chanel:hover {
+.activeChannel{
+  color: black;
+}
+
+.channel:hover {
   opacity: 0.3;
   transition: 0.5s;
 }
@@ -246,6 +250,7 @@ h1, h3 {
   background-color: rgb(112,181,248);
   border-radius: 10px;
   border-top-left-radius: 0;
+  overflow: hidden;
 }
 
 .span-username {
@@ -256,6 +261,8 @@ h1, h3 {
   color: gray;
   font-size: 13px;
   margin-top: 10px;
+  /* float: left; */
+  /* float: inline-end; */
 }
 
 /* section{
@@ -264,6 +271,10 @@ h1, h3 {
 
 
 /* FOOTER */
+
+footer {
+  border: 1px solid black;
+}
 
 .row-footer{
   position: fixed;
@@ -300,6 +311,7 @@ h1, h3 {
 #message[type="text"], #username[type="text"] {
   color: rgb(205,208,211);
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* #message[value] {
@@ -308,5 +320,10 @@ h1, h3 {
 
 ::placeholder {
   /* padding: 0 15px; */
+  color: rgb(205,208,211);
+}
+
+#notification {
+  /* padding: 10px; */
   color: rgb(205,208,211);
 }
