@@ -10,12 +10,18 @@ let spanNot = document.getElementById("notification");
 let ulChannel = document.getElementById("ul-channel");
 let ul = document.getElementById("ul-message");
 
+let liList = ulChannel.getElementsByTagName("li");
+
+let aRoom = "#general";
+if(localStorage.room) {
+  aRoom = localStorage.room;
+}
 let username = "anonymus";
 if(localStorage.username) {
   username = localStorage.username;
 }
 
-let chatroom = new Chatroom("js", username);
+let chatroom = new Chatroom(aRoom, username);
 let chatUI = new ChatUI(ul); 
 
 chatroom.getChats(data => {
@@ -46,6 +52,7 @@ btnUpdate.addEventListener("click", e => {
     localStorage.setItem("username", chatroom.username);
     spanNot.innerHTML = `Username updated: ${chatroom.username}`;
     setTimeout(() => {
+      location.reload();
       spanNot.innerHTML = "";
     }, 3000);
   }
@@ -54,6 +61,7 @@ btnUpdate.addEventListener("click", e => {
     window.alert("Incorrect username!");
   }
   inpUpdate.value = "";
+
 });
 
 ulChannel.addEventListener("click", e => {
@@ -64,6 +72,16 @@ ulChannel.addEventListener("click", e => {
     chatUI.clearUL();
     chatroom.getChats(data => {
       chatUI.templateLI(data)
-    })
+    });
+  }
+  for(let i = 0; i < liList.length; i++) {
+    if (liList[i] == e.target) {
+      liList[i].className += " activeRoom";
+      chatroom.room = "#" + liList[i].id;
+      localStorage.setItem("room", chatroom.room);
+    }
+    else {
+      liList[i].className = "channel";
+    }
   }
 });

@@ -33,16 +33,31 @@ export class ChatUI {
   templateLI (data) {
     let date = data.created_at.toDate();
     let fullDate = this.formatDate(date);
+    let liMessage;
     
-      let liMessage = 
-    `<li class="li-mess">
-        <span class="span-username">${data.username} :</span>
-        <span class="span-message">${data.message}</span>
-        <div class="div-date">${fullDate}</div>
-    </li>`
-    this.list.innerHTML += liMessage;
+    if (data.username == localStorage.username) {
+      liMessage = 
+      `<li class="li-mess li-right">
+          <span class="span-username">${data.username} :</span>
+          <span class="span-message">${data.message}</span>
+          <div class="div-date">${fullDate}</div>
+      </li>
+      <div></div>`;
+    }
+    else {
+      liMessage =
+        `
+        <li class="li-mess">
+            <span class="span-username">${data.username}: </span>
+            <span class="span-message">${data.message}</span>
+            <div class="div-date">${fullDate}</div>
+        </li>
+        <div></div>`;
+    } 
 
+    this.list.innerHTML += liMessage;
   }
+
 
   clearUL() {
     this.list.innerHTML = "";
